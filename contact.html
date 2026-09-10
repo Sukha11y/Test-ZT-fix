@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="nav">
+    <a class="logo" href="index.html">Apex Market</a>
+    <a href="index.html">Home</a>
+    <a href="products.html">Shop</a>
+    <a href="contact.html">Click here</a>
+  </div>
+
+  <div class="layout" style="grid-template-columns: 1fr 1fr;">
+    <div class="card">
+      <h1>Contact us</h1>
+      <p class="low">Fields marked with <span class="required-star">*</span> are required.</p>
+      <form action="#" method="post">
+        <input placeholder="Name *">
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Password to your account">
+        <textarea placeholder="How can we help?"></textarea>
+        <input type="checkbox"> I agree to terms
+        <br>
+        <input type="submit" value="Send" class="btn">
+        <input type="reset" value="Clear">
+      </form>
+      <p class="tiny" id="err" style="color:#c00; display:none;">Error</p>
+    </div>
+    <div class="card">
+      <h2>Hours</h2>
+      <p class="low">Mon–Fri 9–5</p>
+      <p>Call <a href="tel:5551234">this number</a></p>
+      <img src="https://picsum.photos/seed/map/600/240">
+    </div>
+  </div>
+</body>
+</html>
