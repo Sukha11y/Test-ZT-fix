@@ -1,0 +1,13 @@
+diff --git a/index.html b/index.html
+index ca55c19..8bafe17 100644
+--- a/index.html
++++ b/index.html
+@@ -58,7 +58,7 @@
+         <h2>Featured</h2>
+         <div class="product-grid">
+           <div class="product">
+-            <img src="https://picsum.photos/seed/bag/400/240">
++            <img src="https://picsum.photos/seed/bag/400/240" alt="Canvas tote bag">
+             <p>Canvas tote</p>
+             <p class="low">$24.00</p>
+             <span class="tiny">Red = last sizes. Green = plenty in stock.</span>
