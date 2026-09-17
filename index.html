@@ -3,53 +3,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apex Market Workplace Catalog</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="top-bar">
-    <span>Free shipping on orders over $50</span>
-    <span>EN | USD</span>
+    <span>Apex Workplace Commerce · North America · FY26 Q3 catalog</span>
+    <span>EN | USD · Contract #AWC-44019</span>
   </div>
 
   <div class="nav">
-    <a class="logo" href="index.html">Apex Market</a>
+    <a class="logo" href="index.html">Apex Market<span>Enterprise procurement</span></a>
     <a href="index.html">Home</a>
     <a href="products.html">Shop</a>
     <a href="contact.html">Click here</a>
     <a href="https://example.com" target="_blank">Partners</a>
-    <input placeholder="Search" id="q">
-    <div class="click-div" onclick="alert('Cart')">Cart (2)</div>
+    <input placeholder="Search catalog, SKU, or vendor" id="q">
+    <div class="click-div" onclick="alert('Cart')">Requisition (2)</div>
     <button class="icon-only"></button>
   </div>
 
-  <div class="banner-ad blink">FLASH SALE — 40% OFF EVERYTHING — TODAY ONLY</div>
+  <div class="banner-ad">PREFERRED VENDOR WINDOW — 40% OFF APPROVED SKUS — TODAY ONLY</div>
 
   <div class="hero">
+    <div class="hero-kicker">Global workplace program</div>
     <h3>Summer collection is here</h3>
-    <p class="low">New arrivals in apparel, home, and outdoor gear.</p>
+    <p class="low">Standardize apparel, facilities, and outdoor kits across regions with contracted vendors and volume pricing.</p>
     <div class="btn" onclick="location.href='products.html'">Shop now</div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric"><b>128</b><span>Active SKUs</span></div>
+    <div class="metric"><b>$2.4M</b><span>YTD committed spend</span></div>
+    <div class="metric"><b>14</b><span>Approved vendors</span></div>
+    <div class="metric"><b>98%</b><span>On-contract rate</span></div>
   </div>
 
   <div class="layout">
     <div>
       <div class="card">
         <h4>Filters</h4>
-        <div>
-          <input type="checkbox" id="new">
-          New arrivals
+        <div class="filter-row">
+          <input type="checkbox" id="filter-new-arrivals">
+          <label for="filter-new-arrivals">New arrivals</label>
         </div>
-        <div>
-          <input type="checkbox" id="sale">
-          On sale
+        <div class="filter-row">
+          <input type="checkbox" id="filter-sale">
+          <label for="filter-sale">On sale</label>
         </div>
-        <div>
-          <input type="checkbox" id="new">
-          In stock
+        <div class="filter-row">
+          <input type="checkbox" id="filter-in-stock">
+          <label for="filter-in-stock">In stock</label>
         </div>
       </div>
       <div class="card">
         <h5>Price</h4>
         <input type="range" min="0" max="500">
+        <p class="aside-note">USD · corporate list, excl. freight</p>
       </div>
     </div>
 
@@ -58,22 +68,25 @@
         <h2>Featured</h2>
         <div class="product-grid">
           <div class="product">
-            <img src="https://picsum.photos/seed/bag/400/240">
+            <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=800&h=480&fit=crop" alt="Canvas tote">
             <p>Canvas tote</p>
+            <span class="sku">SKU AWC-TOTE-01</span>
             <p class="low">$24.00</p>
             <span class="tiny">Red = last sizes. Green = plenty in stock.</span>
             <div class="btn" onclick="alert('added')">Add</div>
           </div>
           <div class="product">
-            <img src="https://picsum.photos/seed/lamp/400/240" alt="">
+            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&h=480&fit=crop" alt="">
             <p>Desk lamp</p>
+            <span class="sku">SKU AWC-LAMP-09</span>
             <p class="low">$48.00</p>
             <span class="tiny" style="color: green;">Plenty</span>
             <div class="btn" onclick="alert('added')">Add</div>
           </div>
           <div class="product">
-            <img src="https://picsum.photos/seed/mug/400/240" alt="photo">
+            <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=800&h=480&fit=crop" alt="photo">
             <p>Ceramic mug</p>
+            <span class="sku">SKU AWC-MUG-22</span>
             <p class="low">$12.00</p>
             <span class="tiny" style="color: red;">Last sizes</span>
             <div class="btn" onclick="alert('added')">Add</div>
@@ -110,26 +123,33 @@
     <div>
       <div class="card">
         <p class="tiny">Newsletter</p>
+        <p class="low">Category updates for procurement leads.</p>
         <input placeholder="Email">
         <div class="click-div" onclick="alert('subscribed')">Sign up</div>
+      </div>
+      <div class="card">
+        <p class="tiny">Policy</p>
+        <p class="low">Orders over $500 route to cost-center approval. Preferred vendors are marked in the catalog.</p>
       </div>
       <audio src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/t2.mp3" autoplay></audio>
     </div>
   </div>
 
   <div class="footer">
-    <a href="#">More info</a> ·
-    <a href="javascript:void(0)">Read more</a> ·
-    <span tabindex="3">Help</span>
-    <p>© Apex Market</p>
-  </div>
-
-  <div class="modal-bg" id="promo" style="display:block">
-    <div class="modal">
-      <p>Get 10% off your first order</p>
-      <input placeholder="Email address">
-      <div class="btn" onclick="document.getElementById('promo').style.display='none'">No thanks</div>
+    <div>
+      <strong style="color:#c5d0db">Apex Market</strong>
+      <p>Workplace commerce for contracted goods. Catalog prices reflect master service agreements and do not include regional tax.</p>
+    </div>
+    <div>
+      <a href="#">More info</a><br>
+      <a href="javascript:void(0)">Read more</a><br>
+      <span tabindex="3">Help</span>
+    </div>
+    <div>
+      <p>© Apex Market · Confidential</p>
+      <p>ISO procurement program · NA / EMEA / APAC</p>
     </div>
   </div>
+
 </body>
 </html>
