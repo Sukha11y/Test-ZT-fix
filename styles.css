@@ -285,16 +285,6 @@ textarea {
   color: #7d8b99;
 }
 
-.blink {
-  animation: blink 0.8s step-end infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
